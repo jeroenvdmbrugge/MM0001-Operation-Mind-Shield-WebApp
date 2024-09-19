@@ -12,10 +12,14 @@ st.image("header.png")
 # Description
 st.write("""
 ### About this App 
-This app predicts whether a patient is likely to be diagnosed with Alzheimer's Disease based on key clinical features. It uses a binary classification model, trained on a publicly available dataset containing detailed health information and Alzheimer's Disease diagnoses for 2,149 patients.
+This app predicts whether a patient is likely to be diagnosed with Alzheimer's Disease based on key clinical features. 
+It uses a binary classification model, trained on a publicly available dataset containing detailed health information 
+and Alzheimer's Disease diagnoses for 2,149 patients.
 
 ##### Model Details
-The prediction model is a CatBoost classifier. Initially, it was trained on all 32 features in the dataset, including demographic information, lifestyle factors, medical history, clinical measurements, symptoms, and cognitive and functional assessments. 
+The prediction model is a CatBoost classifier. Initially, it was trained on all 32 features in the dataset, including 
+demographic information, lifestyle factors, medical history, clinical measurements, symptoms, and cognitive and 
+functional assessments. 
 \n
 After performing feature importance analysis, the following 5 features were identified as the most predictive:
 
@@ -25,7 +29,8 @@ After performing feature importance analysis, the following 5 features were iden
 - **Memory Complaints**: Indicates if the patient reports memory issues (Yes/No)
 - **Behavioral Problems**: Indicates if the patient has behavioral issues (Yes/No)
 
-The model was retrained using only these 5 key features and fine-tuned to match the performance of the original model with all 32 features, achieving a mean accuracy of 95.57%, validated through k-fold cross-validation.
+The model was retrained using only these 5 key features and fine-tuned to match the performance of the original model 
+with all 32 features, achieving a mean accuracy of 95.57%, validated through k-fold cross-validation.
 
 ##### Dataset Citation
 Rabie El Kharoua. Alzheimer's Disease Dataset. Kaggle, 2024, https://doi.org/10.34740/KAGGLE/DSV/8668279.
