@@ -74,9 +74,9 @@ if st.button('Run Prediction Model'):
             prediction = model.predict(input_data)
 
             if prediction[0] == 1:
-                st.success("Positive Alzheimer's diagnosis likely.")
+                st.error("Positive Alzheimer's diagnosis likely.")
             else:
-                st.error("Negative Alzheimer's diagnosis likely.")
+                st.success("Negative Alzheimer's diagnosis likely.")
 
     except ValueError:
         st.error("Please ensure that all inputs are numeric.")
